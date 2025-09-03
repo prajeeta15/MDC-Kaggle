@@ -1,7 +1,9 @@
 
-# 📊 Make Data Count — Dataset Reference Classification
+## Make Data Count — Dataset Reference Classification
 
-## 🧩 Problem Statement
+Dataset:[https://www.kaggle.com/competitions/make-data-count-finding-data-references/data]
+
+### Problem Statement
 
 The challenge is to **detect and classify mentions of scientific datasets** within research articles. For each article and its mentioned dataset, we need to predict whether the mention is:
 
@@ -12,7 +14,7 @@ We’re given XML and PDF versions of scientific papers and a training label fil
 
 ---
 
-## 🛠️ Solution Overview
+### Solution Overview
 
 This solution performs the following steps:
 
@@ -57,7 +59,7 @@ Each test article is processed to:
 
 ---
 
-## 🧾 File Structure
+### File Structure
 
 ```
 ├── train/
@@ -74,7 +76,7 @@ Each test article is processed to:
 
 ---
 
-## 📦 Dependencies
+### Dependencies
 
 - `lxml`
 - `pdfplumber`
@@ -91,7 +93,7 @@ pip install lxml pdfplumber scikit-learn pandas tqdm joblib
 
 ---
 
-## 💡 Key Techniques
+### Key Techniques
 
 - Robust XML and PDF parsing with fallbacks
 - Dataset ID normalization and regex cleaning
@@ -100,7 +102,7 @@ pip install lxml pdfplumber scikit-learn pandas tqdm joblib
 
 ---
 
-## 📝 Notes
+### Notes
 
 - PDF parsing is used **only if XML fails**.
 - Duplicate predictions are avoided using a `seen` set.
